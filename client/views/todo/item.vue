@@ -20,18 +20,18 @@ export default {
       requried: true
     }
   },
-  data() {
+  data () {
     return {}
   },
   watch: {},
   computed: {},
   methods: {
-    deleteTodo() {
+    deleteTodo () {
       this.$emit('del', this.todo.id)
     }
   },
-  created() {},
-  mounted() {}
+  created () {},
+  mounted () {}
 }
 </script>
 

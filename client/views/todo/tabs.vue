@@ -29,27 +29,27 @@ export default {
       required: true
     }
   },
-  data() {
+  data () {
     return {
       states: ['all', 'active', 'completed']
     }
   },
   watch: {},
   computed: {
-    unFinishedTodoLength() {
+    unFinishedTodoLength () {
       return this.todos.filter(todo => !todo.completed).length
     }
   },
   methods: {
-    clearAllCompleted() {
+    clearAllCompleted () {
       this.$emit('clearAll')
     },
-    toggleFilter(state) {
+    toggleFilter (state) {
       this.$emit('toggle', state)
     }
   },
-  created() {},
-  mounted() {}
+  created () {},
+  mounted () {}
 }
 </script>
 

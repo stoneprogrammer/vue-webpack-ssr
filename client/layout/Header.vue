@@ -9,14 +9,14 @@ export default {
   name: '',
   components: {},
   props: {},
-  data() {
+  data () {
     return {}
   },
   watch: {},
   computed: {},
   methods: {},
-  created() {},
-  mounted() {}
+  created () {},
+  mounted () {}
 }
 </script>
 
