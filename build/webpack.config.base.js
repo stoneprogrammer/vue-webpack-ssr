@@ -4,6 +4,7 @@ const vueLoaderOptions = require('./vue-loader.config')
 const isDev = process.env.NODE_ENV === 'development'
 
 const config = {
+  mode: process.env.NODE_ENV || 'production',
   target: 'web', // webpack编译的是web平台
   entry: path.join(__dirname, '../client/index.js'),
   output: {
